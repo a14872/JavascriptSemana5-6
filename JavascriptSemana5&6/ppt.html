@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+</head>
+<body class="body">
+
+	<nav id="navbar" class="navbar navbarAll">
+		<ul class="leftNav">
+			<li><img src="img/jslogo.png" width="40px" height="40px" /></li>
+			<li class="navItem"><a href="index.html">Inicio</a></li>
+			<li class="navItem"><a href="calc.html">Calculadora</a></li>
+			<li class="navItem"><a class="black" href="ppt.html">Pedra/Papel/Tesoura</a></li>
+			<li class="navItem"><a class="black" href="4emlinha.html">4EmLinha</a></li>
+		<ul class="rightNav">
+			<li id="box"></li>
+		</ul>
+		</ul>
+
+	</nav>
+
+	<div class="content">
+
+		<center><h2><b>Pedra / Papel / Tesoura</b></h2></center>
+		<br>
+		<br>
+		<center>
+			<h4>Escolha a sua jogada:</h4>
+
+			<img onclick="ppt(1)" id="RockPaperScissor" src="img/Rock.png"  class="pptBtn" />
+			<img onclick="ppt(2)" id="RockPaperScissor" src="img/Paper.png" class="pptBtn" />
+			<img onclick="ppt(3)" id="RockPaperScissor" src="img/Scissors.png" class="pptBtn" />
+			<br><br>
+			<div id="divJogoPPT" class="divJogoPPT">
+				<h2><p id="GanhouPerdeu">Ganhou</p></h2>
+				<p>Sua Jogada: <b id="suaJogada"></b></p>
+				<p>Jogada Computador: <b id="jogadaPC"><b></p>
+				<p id="GanhouPerdeuEmpatou"></p>
+				<a href="ppt.html">Resetar Score</a>
+			</div>
+		</center>
+
+	</div>
+
+	<a id="back2Top" title="Back to top" href="#"><i class="fas fa-level-up-alt" color="#F3DE2B" ></i></a>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>
